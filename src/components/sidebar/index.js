@@ -15,7 +15,7 @@ import StorageIcon from '@material-ui/icons/Storage';
 const index = () => {
     return (
         <div className='sidebar'>
-            <NewFile />
+            
 
             
         </div>

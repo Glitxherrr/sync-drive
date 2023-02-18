@@ -5,8 +5,19 @@
     width: 100vw;
 }
 
-.header>div {
-    padding: 12px;
+.applogout {
+  background-color: #f2f2f2;
+  color: #222;
+  border-radius: 6px;
+  transition: all 0.2s;
+  font-size: 16px;
+}
+
+.applogout button:hover {
+  background-color: #ddd;
+  color: #222;
+  cursor: pointer;
+  transform: translateY(-2px);
 }
 
 .header__logo {
@@ -16,8 +27,10 @@
 }
 
 .header__logo>img {
-    height: 100%;
+    height: 90%;
     object-fit: contain;
+    border-radius: 50%;
+    padding: 10px ;
 }
 
 .header__logo>span {
@@ -31,7 +44,7 @@
     flex: 1;
     display: flex;
     align-items: center;
-    padding: 8px;
+    padding: 0px;
 }
 
 .header__searchBar {
@@ -65,7 +78,7 @@
 
 .header__icons {
     display: flex;
-    align-items: center;
+    align-items: right;
     margin-right: -30px;
 }
 

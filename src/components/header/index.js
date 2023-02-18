@@ -9,28 +9,20 @@ import HelpOutlineIcon from '@material-ui/icons/HelpOutline';
 import SettingsIcon from '@material-ui/icons/Settings';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import AppsIcon from '@material-ui/icons/Apps';
+import NewFile from '../sidebar/NewFile'
 
-const index = ({ userPhoto }) => {
+const index = ({ userPhoto, handleLogin }) => {
     return (
         <div className='header'>
             <div className="header__logo">
-                <img src={GDriveLogo} alt="Google Drive" />
+                <img src={userPhoto} alt="User Photo" />
                 <span>SyncDrive</span>
             </div>
-            <div className="header__searchContainer">
-                <div className="header__searchBar">
-                    <SearchIcon />
-                    <input type="text" placeholder='Search in Drive' />
-                    
-                </div>
-            </div>
-            <div className="header__icons">
-               
-               
-                <img src={userPhoto} alt="User Photo"/>
-            </div>
+            <NewFile />
+           
+            <button className="applogout" onClick={handleLogin}>Logout</button>
         </div>
     )
 }
 
-export default index
+export default index;

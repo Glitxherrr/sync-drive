@@ -49,19 +49,16 @@ function App() {
 
   return (
     <div className="app">
-    <div className='app__background' />
-    
+      <div className="gradient-01 z-0 absolute"></div>
+      <div className="gradient-02 z-0 absolute"></div>
       {user ? (
         <>
-          <Header userPhoto={user.photoURL} />
+          <Header userPhoto={user.photoURL} handleLogin={handleLogin} />
           <div className="app__main">
             <Sidebar />
             <FilesView />
           </div>
-          <div className="app__buttons">
-
-            <button className="app__logout" onClick={handleLogin}>Logout</button>
-          </div>
+          
         </>
       ) : (
         <div className="app__login">

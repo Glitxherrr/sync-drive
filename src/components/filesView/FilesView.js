@@ -65,7 +65,7 @@ const FilesView = () => {
   return (
     <div className='fileView'>
       <div className='fileView__row'>
-        {files.slice(0, 5).map(({ id, item }) => (
+        {files.slice(0, 3).map(({ id, item }) => (
           <FileCard name={item.caption} />
         ))}
       </div>
